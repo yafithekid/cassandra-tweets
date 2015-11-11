@@ -22,8 +22,13 @@ Simple Twitter Application with Cassandra
 ### Available Commands
 
 `register [username] [password]` : register the username and password to database
+
 `login [username] [password]` : login with the given username and password
+
 `follow [username]` : current user will follow [username]
+
 `userline [username]` : get userline of [username]
+
 `timeline [username]` : get timeline of [username]
+
 `tweet [body]` : do tweet
