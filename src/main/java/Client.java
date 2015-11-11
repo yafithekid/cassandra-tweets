@@ -41,7 +41,7 @@ public class Client {
                     uSession = user;
                     System.out.println("[SUCCESS] Login successful as "+uSession.getUsername());
                 } else {
-                    System.out.println("[ERROR] Username not found");
+                    System.out.println("[ERROR] Username/password not match");
                 }
             } else if (split[0].equalsIgnoreCase("follow")){
                 if (split.length != 2){
