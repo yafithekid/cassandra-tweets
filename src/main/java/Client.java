@@ -77,8 +77,13 @@ public class Client {
                 for(int i = 1; i < split.length; i++){
                     tweet += " " + split[i];
                 }
-                server.tweet(uSession.getUsername(),tweet);
-                System.out.println("[SUCCESS] Tweet posted");
+                if(uSession == null){
+                    System.out.println("[ERROR] You are not logged in");
+                } else {
+                    server.tweet(uSession.getUsername(),tweet);
+                    System.out.println("[SUCCESS] Tweet posted");
+                }
+
             } else if (split[0].equalsIgnoreCase("exit")){
                 System.out.println("[SUCCESS] bye");
                 stop = true;
