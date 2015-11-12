@@ -24,7 +24,7 @@ public class Server {
     }
 
     public void follow(String follower,String followed){
-        execute("INSERT INTO followers (username,follower) VALUES ('" + followed + "','" + follower + "')");
+        execute("INSERT INTO followers (username,follower,since) VALUES ('" + followed + "','" + follower + "',dateof(now()))");
     }
 
     public void tweet (String username, String body) {
